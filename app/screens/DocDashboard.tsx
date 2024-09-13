@@ -1,15 +1,20 @@
 import React, { FC } from "react"
 import { Image, ImageStyle, TextStyle, View, ViewStyle } from "react-native"
 import { observer } from "mobx-react-lite"
-import { Text } from "app/components"
+import { Text, Screen } from "app/components"
 import { AppStackScreenProps } from "app/navigators"
+import { colors } from "app/theme"
 
 interface DocDashboardProps extends AppStackScreenProps<"DocDashboard"> {}
 
 export const DocDashboard: FC<DocDashboardProps> = observer(function DocDashboard() {
   return (
-    <View>
-      <Text>Doc Dashboard</Text>
-    </View>
+    <Screen
+      preset="auto"
+      safeAreaEdges={["top", "bottom"]}
+      backgroundColor={colors.palette.neutral100}
+    >
+      <View></View>
+    </Screen>
   )
 })

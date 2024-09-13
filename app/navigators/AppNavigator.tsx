@@ -8,7 +8,6 @@ import {
   DarkTheme,
   DefaultTheme,
   NavigationContainer,
-  NavigatorScreenParams, // @demo remove-current-line
 } from "@react-navigation/native"
 import { createNativeStackNavigator, NativeStackScreenProps } from "@react-navigation/native-stack"
 import { observer } from "mobx-react-lite"
